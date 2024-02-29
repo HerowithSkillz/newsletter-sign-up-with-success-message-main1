@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url("fonts/Roboto-Bold.ttf");
+    /* font-family: 'Roboto-Regular';
+    src: url("fonts/Roboto-Regular.ttf"); */
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Roboto-Regular', sans-serif;
+    color: var(--Charcoal-Grey);
+}
+
+
+:root{
+--dark-sate-grey: hsl(234, 29%, 20%);
+--Charcoal-Grey: hsl(235, 18%, 26%);
+--Grey : hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+--Tomato: hsl(4, 100%, 67%);
+}
+
+body{
+    background-color: var(--Charcoal-Grey);
+    padding: 2rem;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* Main box CSS */
+.container{
+    background-color: var(--White);
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+   gap: 10px;
+   border-radius: 2rem;
+}
+.left{
+    width: 301px;
+    padding: 20px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.space{
+    padding: 20px 0px;
+}
+h1{
+    font-size: 2.6rem;
+    color: var(--dark-sate-grey);
+}
+.left li{
+    list-style-image: url(assets/images/icon-list.svg);
+    list-style-position: inside;
+    padding: 2px 0px;
+    
+}
+.size{
+      width: 350px;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+}
+.right{
+    width: 20rem;
+    margin: 12px;
+    /* margin: auto; */
+}
+.input{
+    border: 1px solid;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    padding: 5px 10px;
+    margin-top: 5px;
+}
+
+.btn{
+    width:320px;
+    background-color: var(--dark-sate-grey);
+    color: var(--White);
+    height: 60px;
+    margin: 0px;
+    cursor: pointer;
+}
+.Error{
+    display: flex;
+    justify-content: space-between;
+    width: 318px ;
+    /* border: 2px solid red; */
+}
+/* If no input is made, the css would be */
+.Error>div{
+    font-weight: bolder;
+    font-size: 12px;
+}
+#red{
+    color: var(--Tomato);
+    font-size: 10px;
+}
+
+/* Now confirmation  BOX */
+
+.box{
+    background-color: var(--White);
+    width: 380px;
+    height: 380px;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 40px;
+    gap: 10px;
+}
+
+.box img{
+    width: 60px;
+}
+
+.box p{
+    margin-bottom: 20px;
+}
+.btn:hover{
+    background-image: linear-gradient(to right,rgb(237, 63, 92),var(--Tomato));
+}
+#eid{
+    font-weight: bolder;
+}
+
+
+@media (max-width: 900px) {
+    *{
+        font-size: 12px;
+    }
+    .container{
+        
+        flex-wrap: wrap-reverse;
+        padding-top: 0px;
+        padding: 0px;
+        justify-content: center;
+        /* align-items: center; */
+        gap: 0px;
+        width: 411px;
+    }
+    body{
+        padding: 0px;
+    }
+    #img-2{
+       content: url(assets/images/illustration-sign-up-mobile.svg);
+       width: 395px;
+       border-radius: 2rem;
+    }
+    .left{
+        padding-left: 40px;
+    }
+    .right{
+        margin: 0px;
+        width: 200px; 
+       
+    }
+    
+}
