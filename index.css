@@ -24,6 +24,12 @@
 body{
     background-color: var(--Charcoal-Grey);
     padding: 2rem;
+     
+        min-height: 100vh;
+        display: flex;  /* it works with grid too  */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 }
 
 main{
